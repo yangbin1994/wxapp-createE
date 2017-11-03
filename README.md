@@ -64,6 +64,8 @@ Page(connect(mapStateToProps)(createE({
 ```
 
 # Note
+* `yarn remote` 不是必选指令，它配合 `dva` 的 `extraEnhancers` 可以展示 `redux-dev-tools` 界面。
+
 * html内部要引入组件下 `components` 声明的组件，并且传入键值；父组件可以用es6的对象展开写法实现覆盖效果。
 
 ```html
@@ -81,3 +83,6 @@ Page(connect(mapStateToProps)(createE({
 * 如果对非 `Page` 组件进行`connect` 到 `redux`，需要对 `wechat-wxapp-redux` 源码进行修改，将浅比较 `data` 的地方：`this.data` 替换为 `this.getData()`
 
 * 子组件的样式需要相应引入，命名空间要人工维护
+
+# License
+MIT
