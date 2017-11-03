@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<import src="../../components/Carousel/index.wxml" />
+
+<view class="container">
+  <text>{{outsideName}}</text>
+  <text>{{title}}</text>
+  <switch checked bindchange="onSwitch"/>
+  <template is="Carousel" data="{{ ...Carousel,  title: 'Root覆盖了Carousel的Title' }}" />
+</view>

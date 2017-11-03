@@ -1,0 +1,7 @@
+<template name="We">
+    <view class="We">
+        <text>{{title}}</text>
+        <text>{{intro}}</text>
+        <switch checked bindchange="{{__path__}}onSwitch" />
+    </view>
+</template>

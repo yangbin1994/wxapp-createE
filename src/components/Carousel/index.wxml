@@ -1,0 +1,11 @@
+<import src="../We/index.wxml" />
+
+<template name="Carousel">
+    <view class="Carousel">
+        <text>{{outsideName}}</text>
+        <text>{{title}}</text>
+        <text>{{intro}}</text>
+        <switch checked bindchange="{{__path__}}onSwitch" />
+        <template is="We" data="{{ ...We }}" />
+    </view>
+</template>
